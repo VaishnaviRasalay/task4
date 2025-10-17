@@ -1,0 +1,94 @@
+/* *{
+    margin:0px;
+    padding: 0px;
+}
+html,body{
+    height:100%;
+    width:100%;
+    background-color: black;
+}
+.border{
+    border:2px solid red;
+    background-color: white;
+   display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card{
+    background: linear-gradient(to bottom, #ffd54f, #ff8a00);
+    width:32%;
+    height:300px;
+    border:2px solid black;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 0px;
+    padding: 20px;
+    flex-direction: column;
+    
+
+}
+.card img{
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50px;
+   
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.border {
+  border: 2px solid red;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* evenly space cards */
+  gap: 20px; /* clean spacing instead of margin */
+  padding: 20px;
+}
+
+.card {
+  background: linear-gradient(to bottom, #ffd54f, #ff8a00);
+  width: 30%; /* fits 3 cards per row */
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 15px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
